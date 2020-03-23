@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header {
+    height:10vh;
+    width:100%;
+    display:flex;
+    align-items:center;
+}
+
+.header .logo {
+    font-size:2rem;
+    margin-left:10px;
+    text-decoration:none;
+    color:#110d4a;
+    margin-left:30px;
+}
+
+.container {
+    width:70%;
+    height:auto;
+    margin:0 auto;
+}
+
+.container h3 {
+    text-align:center;
+    font-size:4rem;
+    color:#110d4a;
+}
+
+.container .pic {
+    background-image:url("assets/undraw_building_blocks_n0nc.png");
+    background-repeat:no-repeat;
+    background-size:100%;
+    background-position: center;;
+    height:300px;
+    height:300px;
+    margin:0 auto;
+}
+
+    .ask {
+    width:100%;
+    height:600px;
+    margin:0 auto;
+    background-color:#110d4a;
+    border-radius:170px 0px 40px 0px;
+}
+
+    .ask h2 {
+    text-align:center;
+    font-size:2rem;
+    color:#fff;
+    padding-top:60px;
+}
+
+.ask p {
+    text-align:center;
+    color:#fff;
+    margin-top:70px;
+    line-height:30px;
+}
+
+.ask .btn {
+    text-align:center;
+    margin-top:60px;
+}
+
+.ask .button {
+    outline:none;
+    border:0;
+    color:#fff;
+    text-decoration:none;
+    border:2px solid #E05E5E;
+    border-radius:10px;
+    background-color:#E05E5E;
+    padding:10px 40px;
+    font-weight:500;
+    font-size: 1.5rem;
+    cursor:pointer;
+    margin:0 auto;
+}
+
+.ask .answer {
+    text-align:center;
+    color:#fff;
+    margin:60px auto;
+    line-height:30px;
+    
+}
+
+.section {
+    width:80%;
+    height:auto;
+    margin:0 auto;
+}
+
+.section .tedTalk {
+    text-align: center;
+    font-size:2rem;
+    margin-top:60px;
+    color:#110d4a;
+}
+
+.section  .talk-image {
+    background-image:url("assets/undraw_quiz_nlyh.png");
+    background-repeat:no-repeat;
+    background-size:100%;
+    background-position: center;;
+    height:300px;
+    height:300px;
+    margin:0 auto;
+    animation: animate 1s infinite alternate;
+}
+
+@keyframes animate {
+    from {
+        opacity:0.5;
+        transform:translateY(-10%);
+    }
+    to {
+        opacity:1;
+        transform:translateY(10%);
+    }
+}
+
+
+.section .article {
+    text-align:center;
+    color:#110d4a;
+    font-weight:500;
+    line-height:30px;
+}
+
+.something {
+    width:100%;
+    height:500px;
+    margin:50px auto;
+    background-color:#110d4a;
+    border-radius:0px 0px 200px 0px;
+}
+
+.something .freestyle {
+    text-align:center;
+    font-size:2rem;
+    color:#fff;
+    padding-top:60px;
+}
+
+
+.something .text {
+    color:#fff;
+    text-align:center;
+    font-weight:500;
+    line-height: 30px;
+    margin-top: 70px;
+}
+
+.holder {
+    width:200px;
+    height:50px;
+    margin-top: 40px;
+    margin:50px auto;
+    cursor: pointer;
+}
+
+.holder .box1 {
+    width:100%;
+    height:100%;
+    background-color:#E05E5E;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:10px;
+    position:relative;
+    transition: all 0.7s ease-in-out;
+}
+
+.holder .box2 {
+    width:0%;
+    height:100%;
+    background-color:#fff;
+    border-radius:10px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    transition: all 0.7s ease-in-out;
+    position:absolute;
+    left:0;
+    visibility: hidden;
+}
+
+.holder .box1 .show {
+    color:#fff;
+}
+
+.holder .box1 .box2 .show2 {
+    color:#110d4a;
+}
+
+
+
+/* for screens larger than 768px */
+
+@media screen and (min-width: 1200px) {
+
+    body {
+        display:none;
+    }
+    
+}
+
+/* for screens smaller than 330px */
+
+@media screen and (max-width: 330px) {
+    .ask {
+        border-radius:135px 0px 0px 0px;
+    }
+    
+}
